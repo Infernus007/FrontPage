@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar{
+ padding: 1rem;
+    margin: 4rem 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+img:not(.NavItems  *){
+    height: 4rem;
+    background-color: red;
+    width: 4rem;
+}
+.NavItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+gap: 1rem;
+input{
+    padding: 0.5em;
+    border-radius: 2rem;
+    background-color:slateblue ;
+    color: white;
+    font-weight: bolder;
+
+}
+
+img{
+    height: 3rem;
+ width: 3rem;
+}
+}
+
+.Logo img{
+ 
+    border-radius: 50% 100%;
+}
+}
+.NavItems input::before{
+    content: '&';
+}
