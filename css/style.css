@@ -89,6 +89,9 @@ body {
 .Hero .right .Trending .content p {
   padding: 2rem;
 }
+.Hero .right .footer {
+  display: none;
+}
 .Hero .right .News {
   max-width: fit-content;
   color: green;
@@ -100,7 +103,7 @@ body {
 }
 .Hero .CenterContent {
   margin-top: 2em;
-  max-width: max-content;
+  max-width: minmax(fit-content, max-content);
   grid-area: Hero;
 }
 .Hero .CenterContent .CenterImage {
@@ -131,5 +134,16 @@ body {
   }
   .NavItems .NavItem:nth-child(1) {
     padding-top: 2rem;
+  }
+  .Hero {
+    margin-left: 25%;
+    grid-template-areas: "SidebarRt" "Hero" "footer";
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: footer;
+    padding: 2rem;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

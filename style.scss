@@ -101,6 +101,10 @@ max-width: fit-content;
     }
 
 }
+.footer{
+    display: none;
+}
+
 .News{
     max-width: fit-content;
     color: green;
@@ -113,7 +117,7 @@ P{
 }
 .CenterContent{
     margin-top: 2em;
-    max-width: max-content;
+    max-width: minmax(fit-content ,max-content);
     grid-area: Hero;
  .CenterImage{
     padding-bottom: 2rem;
@@ -157,4 +161,18 @@ display: none;
   padding-top: 2rem;
  }
     }
-  }
+   .Hero{
+margin-left: 25%;
+    grid-template-areas: 
+    "SidebarRt"
+    "Hero"
+    "footer";
+   }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: footer;
+    padding: 2rem;
+gap:2rem;
+}
+    }
